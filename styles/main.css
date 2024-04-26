@@ -1,0 +1,65 @@
+/* Default CSS */
+html
+{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+/* Header */
+header
+{
+    background-color: lightsalmon;
+}
+
+/* Navigation */
+nav
+{
+    background-color: lightcoral;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+}
+
+nav > div
+{
+    background-color: dodgerblue;
+}
+
+.menu
+{
+    background-color: blueviolet;
+    padding: 1em;
+}
+
+.menu li
+{
+    display: inline;
+    background-color: red;
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 5px;
+    width: 20px;
+}
+
+/* End of Navigation */
+
+/* End of Header */
+
+/* Main Page Content */
+main
+{
+    background-color: lightblue;
+}
+
+/* End of Main Page Content */
+
+/* Footer */
+footer
+{
+    background-color: cornflowerblue;
+}
+
+/* End of Footer */
+

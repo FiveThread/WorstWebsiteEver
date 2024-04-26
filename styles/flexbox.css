@@ -1,0 +1,46 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display: flex;
+    background-color: lightcoral;
+    flex-wrap: wrap;
+    width: 300px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.box
+{
+    background-color: coral; 
+    margin: 10px;
+    width: 100px;
+}
+
+.box1
+{
+    background-color: blue; 
+    flex: 2;
+    order: 2;
+}
+
+.box2
+{
+    background-color: green; 
+    flex: 1;
+}
+
+.box3
+{
+    background-color: yellow; 
+    flex: 1;
+}
+
+.box4
+{
+    flex: 1;
+}

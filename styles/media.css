@@ -1,0 +1,29 @@
+html 
+{
+    margin: 0;
+    padding: 0;
+}
+
+div
+{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 600px)
+{
+    div
+    {
+        height: 50px;
+        width: 100px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px)
+{
+    div
+    {
+        background-color: red;
+    }
+}
