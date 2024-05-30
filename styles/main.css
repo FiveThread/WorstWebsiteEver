@@ -4,41 +4,126 @@ html
     margin: 0;
     padding: 0;
     background-color: azure;
+    background-image: url(../images/hill.jpeg);
+    background-repeat: no-repeat;
 }
 
-.sector
+/* Main page content */
+.page-title
 {
-    border-top: 10px solid transparent;
-    margin-top: -5px;
-    margin-bottom: -20px;
-    transition: transform ease 300ms;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-weight: normal;
 }
 
-.sector:hover
+
+main
 {
-    transform: translate(0, -1px);
+    background-color: lightblue;
 }
 
+#content-title
+{
+    font-weight: normal;
+    text-align: center;
+    background-color: rgba(255, 160, 122, 0.493);
+    border-style: solid;
+}
+
+
+/* End of Main Page Content */
+
+#main-content
+{
+    top:0; left:0; right:0; bottom:0; 
+    margin:auto;
+
+    height:fit-content;
+    width: 90vh;
+
+    overflow: hidden;
+}
+
+#main-content-container
+{
+    position: relative;
+    top: -5px;
+    padding: .5em;
+    border: 2px;
+    border-style: solid;
+    background: lightcyan;
+    border-color: rgb(0, 0, 0);
+}
+
+
+/* End of main content */
+
+/* End of default */
 
 /* Logo */
-#logo
+#LOGO
 {
-    position: absolute;
-    top: -160px;
-    width: 10em;
-    height: 10em;
+    background-image: url(../images/banners/happy.png);
+    background-size: 100% 100%;
+
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border-width: 2px;
+
+    height: 15em;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
-/* Pannel */
-#nav-pannel
+/* End of logo */
+
+/* Pannel & Nav */
+#nav-contain
 {
-    position: absolute;
-    top: 170px;
-    padding-top: 1em;
-    padding-left: 0.5em;
-    width: 10em;
-    left: 0;
+    display: inline-flex;
+    gap: 0.5em;
 }
+
+.nav-tabs
+{
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 2.4em;
+    top: -3px;
+    margin-top: 2em;
+    padding: 0 1.618em;
+    border-radius: 8px 8px 0 0;
+    background: lightcyan;
+
+
+    border: 2px;
+    border-style: solid;
+}
+
+.tab-image
+{
+    height: 2.4em;
+    left: inherit;
+    position: absolute;
+}
+
+.nav-text
+{
+    text-decoration: none;
+    color: blue;
+}
+
+.nav-text:hover
+{
+    text-decoration: underline;
+    color: purple;
+}
+
+
+/* End of pannel and nav */
+
+
 
 /* Divider */
 .divider
@@ -51,6 +136,8 @@ html
     border-style: inset;
     border-width: 1px;
 }
+
+/* End of divider */
 
 /* Banner */
 .page-banner
@@ -68,129 +155,50 @@ html
 
 }
 
-.tumbnail
+/* End of banner */
+
+/* content grid */
+.featured-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+
+#new-projects-featured
+{
+    display: flex;
+    gap: 0.1em;
+}
+
+#new-projects-featured > div
+{
+    background-color: rgba(240, 128, 128, 0.438);
+    height: 10em;
+    width: 30em;
+    border-style: solid;
+}
+
+
+#old-projects-grid
+{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
+}
+
+#old-projects-grid > div
+{
+    height: 10em;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.item-card-image
 {
     width: 100%;
     height: 100%;
 }
 
-.item-desc
-{
-    width: 250px;
-    height: 30px;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    margin-top: 0em;
-}
-
-.item-container
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.item-block
-{
-    display: inline-block;
-    border-style: solid;
-
-    width: 210px;
-    height: 118px;
-    
-    border-width: 2px;
-}
-
-#nav-pannel > p
-{
-    font-weight: normal;
-    font-size: 0.90em;
-    padding: 0em;
-    margin-bottom: 0.2em;
-}
-
-.item-list
-{
-    padding: 0em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-}
-
-.menu-item
-{
-    text-decoration: none;
-    color: blue;
-}
-
-.menu-item:hover
-{
-    text-decoration: underline;
-    color: purple;
-}
-
-#main-content
-{
-    overflow: hidden;
-    margin-left: 10.2em;
-    padding: 1em;
-    border: 1px;
-    border-style: solid;
-    border-color: lightblue;
-}
-
-.page-title
-{
-    margin-top: 0em;
-    margin-bottom: 0em;
-    font-weight: normal;
-}
-
-/* Navigation */
-nav
-{
-    margin: 1em;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1em;
-}
-
-nav > div
-{
-    background-color: dodgerblue;
-}
-
-.menu
-{
-    padding-top: 0.5em;
-}
-
-.menu-item
-{
-    font-size: small;
-    padding-left: 1.75em;
-}
-
-/* End of Navigation */
-
-/* End of Header */
-
-/* Main Page Content */
-main
-{
-    background-color: lightblue;
-}
-
-/* End of Main Page Content */
-
-/* Footer */
-footer
-{
-    background-color: cornflowerblue;
-}
-
-/* End of Footer */
-
+/* End of content grid */
