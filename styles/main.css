@@ -4,7 +4,7 @@ html
     margin: 0;
     padding: 0;
     background-color: azure;
-    background-image: url(../images/hill.jpeg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
