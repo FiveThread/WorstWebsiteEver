@@ -1,7 +1,7 @@
 html
 {
     background-image: url(../images/random_images/event_better.png);
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
 
 #new-random-featured
